@@ -9,3 +9,13 @@ Get-ChildItem | %{ $_.Name }
 echo "`n"
 
 pause
+
+echo "`n"
+
+Get-ChildItem | %{ $_.FullName }
+
+echo "`n"
+
+pause
+
+cls

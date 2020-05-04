@@ -1,3 +1,5 @@
+Ref : https://docs.microsoft.com/ko-kr/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7
+
 + AllSigned
 - 스크립트 실행 가능
 - 디지털 서명 필요
@@ -7,16 +9,19 @@
 - 모든 스크립트, 구성 파일을 실행
 
 + Default
-- 
+- 기본 설정
+- 윈도우즈 클라이언트 : Restricted
+- 윈도우즈 서버 : RemoteSigned
 
 + RemoteSigned
-- 윈도우즈 서버를 위한 기본 설정
+- 윈도우즈 서버 컴퓨터를 위한 기본 설정
 - 스크립트 실행 가능
 - 인터넷에서 다운로드한 스크립트와 구성파일은 디지털 서명 필요
 - 로컬 컴퓨터에서 작성되었거나 인터넷에서 다운로드 하지 않은 스크립트는 디지털 서명 필요 없음
 - 별도의 방법으로 제한을 해제하는 경우 인터넷에서 다운로드한 스크립트 실행 가능( ex: Unblock-File )
 
 + Restricted
+- 윈도우즈 클라이언트 컴퓨터를 위한 기본 설정
 - 스크립트 실행 불가
 
 + Undefined

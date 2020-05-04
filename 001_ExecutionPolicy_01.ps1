@@ -3,7 +3,6 @@
 Get-ExecutionPolicy
 
 echo "`n"
-
 pause
 
 echo "`n"
@@ -12,7 +11,6 @@ echo "`n"
 Set-ExecutionPolicy Unrestricted
 
 echo "`n"
-
 pause
 
 cls

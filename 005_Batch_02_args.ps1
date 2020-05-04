@@ -5,7 +5,6 @@ echo "`n"
 $temp
 
 echo "`n"
-
 pause
 
 cls

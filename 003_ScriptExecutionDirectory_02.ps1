@@ -11,7 +11,6 @@ echo "`n"
 Get-ScriptDirectory
 
 echo "`n"
-
 pause
 
 cls

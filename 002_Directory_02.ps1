@@ -7,7 +7,6 @@ echo "`n"
 Get-ChildItem | %{ $_.Name }
 
 echo "`n"
-
 pause
 
 echo "`n"
@@ -15,7 +14,6 @@ echo "`n"
 Get-ChildItem | %{ $_.FullName }
 
 echo "`n"
-
 pause
 
 cls

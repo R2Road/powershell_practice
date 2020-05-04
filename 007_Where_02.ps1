@@ -9,14 +9,14 @@ pause
 
 echo "`n>>> GEt-Command notepad.exe | %{$_.Name} <<<`n"
 
-GEt-Command notepad.exe | %{ $_.Name }
+Get-Command notepad.exe | %{ $_.Name }
 
 echo "`n"
 pause
 
 echo "`n>>> GEt-Command notepad.exe | %{$_.Path} <<<`n"
 
-GEt-Command notepad.exe | %{ $_.Path }
+Get-Command notepad.exe | %{ $_.Path }
 
 echo "`n"
 pause

@@ -2,18 +2,14 @@
 
 cls
 
-echo "`n"
-
-echo "### Get-Variable H* ###"
+echo "`n### Get-Variable H* ###`n"
 Get-Variable H*
 
 echo "`n"
 
 pause
 
-echo "`n"
-
-echo "### Get-Variable -Scope 0 ###"
+echo "`n### Get-Variable -Scope 0 ###`n"
 Get-Variable -Scope 0
 
 echo "`n"

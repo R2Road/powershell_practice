@@ -9,7 +9,11 @@ function Get-ScriptDirectory {
     }
 }
 
+echo "`n"
+
 Get-ScriptDirectory | Out-String
+
+echo "`n"
 
 pause
 

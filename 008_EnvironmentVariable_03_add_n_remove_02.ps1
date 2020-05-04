@@ -1,12 +1,5 @@
 ﻿cls
 
-echo "`n>>> Set-Location Env: <<<`n"
-
-Set-Location Env:
-
-echo "`n"
-pause
-
 
 
 # Add Environment Variable

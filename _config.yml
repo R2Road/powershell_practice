@@ -1,1 +1,7 @@
 theme: jekyll-theme-slate
+
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "G-DL2Y3G25HG"
+    anonymize_ip: false # default

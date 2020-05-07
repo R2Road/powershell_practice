@@ -1,50 +1,51 @@
 ﻿cls
 
-echo '>>> Split-Path $psise.CurrentFile.FullPath <<<'
-
 $module_path = Split-Path $psise.CurrentFile.FullPath
-
-echo "`n"
-
-
-
-echo '>>> Result Path <<<'
-
-$module_path
-
-echo "`n"
-pause
-
-
-echo "`n"
-echo '>>> Result Path <<<'
-
 $module_path += "\104_Import_00_testmodule.ps1"
+
+
+
+echo "`n"
+echo '>>> Import Module Path <<<'
+
 $module_path
 
 echo "`n"
-pause
 
 
 
 echo "`n"
+echo '>>> Import-Module -Name $module_path -Verbose <<<'
+
 Import-Module -Name $module_path -Verbose
-#Get-command -Module CommonFunction
+
+echo "`n"
+
+
+
+echo "`n"
+echo '>>> Call - Test Function <<<'
 
 TestFunction1
 
 echo "`n"
-pause
 
 
 
 echo "`n"
+echo '>>> Remove-Module -Name $module_path -Verbose <<<'
+
 Remove-Module -Name $module_path -Verbose
-#Get-command -Module CommonFunction
+
+
+
+echo "`n"
+echo '>>> Call - Test Function <<<'
 
 TestFunction1
 
 echo "`n"
-pause
 
+
+pause
 cls

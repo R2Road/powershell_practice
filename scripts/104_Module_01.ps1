@@ -1,7 +1,7 @@
 ﻿cls
 
 $module_path = Split-Path $psise.CurrentFile.FullPath
-$module_path += "\104_Import_00_testmodule.ps1"
+$module_path += "\104_Module_00_testmodule.ps1"
 
 
 
@@ -20,22 +20,6 @@ echo '>>> Import-Module -Name $module_path -Verbose <<<'
 Import-Module -Name $module_path -Verbose
 
 echo "`n"
-
-
-
-echo "`n"
-echo '>>> Call - Test Function <<<'
-
-TestFunction1
-
-echo "`n"
-
-
-
-echo "`n"
-echo '>>> Remove-Module -Name $module_path -Verbose <<<'
-
-Remove-Module -Name $module_path -Verbose
 
 
 

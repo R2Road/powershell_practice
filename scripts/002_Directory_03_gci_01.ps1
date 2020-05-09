@@ -1,10 +1,12 @@
-﻿cls
+﻿# Get-ChildItem == ls == gci
+
+cls
 
 
 
 echo "`n"
 
-ls | %{ $_.Name }
+gci
 
 echo "`n"
 pause
@@ -13,7 +15,16 @@ pause
 
 echo "`n"
 
-ls | %{ $_.FullName }
+gci | %{ $_.Name }
+
+echo "`n"
+pause
+
+
+
+echo "`n"
+
+gci | %{ $_.FullName }
 
 echo "`n"
 pause

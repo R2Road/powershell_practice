@@ -1,4 +1,6 @@
-﻿cls
+﻿# Get-ChildItem == ls == gci
+
+cls
 
 echo "`n"
 

@@ -17,7 +17,7 @@ $form.KeyPreview = $True
 
 
 
-$file_path = Join-Path ( Split-Path -Parent $PSCommandPath ) "103_Assembly_02_Forms_02_form_rsc_01.png"
+$file_path = Join-Path ( Split-Path -Parent $PSCommandPath ) "103_Assembly_02_Forms_02_form_00_rsc_01.png"
 $image = [System.Drawing.Image]::FromFile( $file_path )
 
 

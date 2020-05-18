@@ -1,13 +1,15 @@
 ﻿cls
 
+$title_string = ">>> Forms : Form 02 : Show Image <<<"
+
 echo "`n"
-echo ">>> Forms : Form 02 : Show Image <<<"
+echo $title_string
 echo "`n"
 
 Add-Type -AssemblyName System.Windows.Forms
 
 $form = New-Object System.Windows.Forms.Form
-$form.Text = 'Form 02 : Show Image'
+$form.Text = $title_string
 $form.Size = New-Object System.Drawing.Size( 330,330 )
 $form.WindowState = "Normal" #Maximized, Minimized
 $form.StartPosition = 'CenterScreen'

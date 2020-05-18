@@ -1,6 +1,6 @@
 ﻿cls
 
-$title_string = ">>> Forms : Form 03 : Keyboard <<<"
+$title_string = ">>> Forms : Form 03 : Keyboard 01 <<<"
 
 echo "`n"
 echo $title_string
@@ -10,12 +10,22 @@ Add-Type -AssemblyName System.Windows.Forms
 
 $form = New-Object System.Windows.Forms.Form
 $form.Text = $title_string
-$form.Size = New-Object System.Drawing.Size( 330,330 )
+$form.Size = New-Object System.Drawing.Size 330, 330
 $form.WindowState = "Normal" #Maximized, Minimized
 $form.StartPosition = 'CenterScreen'
 $form.MinimizeBox = $False
 $form.MaximizeBox = $False
 $form.KeyPreview = $True
+
+
+
+$label = New-Object System.Windows.Forms.Label
+$label.Text = "Press <ESC>"
+$label.AutoSize = $True
+#$label.Size = New-Object System.Drawing.Size 100, 30
+$label.TextAlign = "MiddleCenter"
+$label.Location = New-Object System.Drawing.Point ( ( $form.Size.Width - $label.Size.Width ) * 0.5 ), ( ( $form.Size.Height * 0.5 ) - $label.Size.Height )
+$form.controls.add($label)
 
 
 
@@ -26,19 +36,6 @@ $form.Add_KeyDown(
         $form.Close()
     }
 })
-
-
-
-$file_path = Join-Path ( Split-Path -Parent $PSCommandPath ) "103_Assembly_02_Forms_02_form_00_rsc_01.png"
-$image = [System.Drawing.Image]::FromFile( $file_path )
-
-
-
-$picture_box = new-object System.Windows.Forms.PictureBox
-$picture_box.Width = $image.Size.Width
-$picture_box.Height = $image.Size.Height
-$picture_box.Image = $image
-$form.controls.add( $picture_box )
 
 
 
